@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilal Hussain - Graphic Designer | Portfolio</title>
+    <title>Bilal Hussain - Graphic Designer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">Bilal Hussain</div>
+        <div class="container-nav">
+            <div class="logo">Bilal<span>Hussain</span></div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -30,36 +30,179 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Bilal Hussain</h1>
-            <p class="hero-subtitle">Professional Graphic Designer</p>
-            <p class="hero-description">Creating visually stunning designs that bring your brand to life</p>
-            <div class="hero-buttons">
-                <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            <div class="hero-text">
+                <h1 class="hero-title">Graphic Designer</h1>
+                <p class="hero-subtitle">I create stunning visual designs that bring your brand to life</p>
+                <p class="hero-description">7+ years of experience in branding, digital design, and visual storytelling</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#work" class="btn btn-outline">View My Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop" alt="Bilal Hussain" class="profile-image">
             </div>
         </div>
-        <div class="hero-background"></div>
+    </section>
+
+    <!-- Featured Work Section -->
+    <section id="work" class="featured-work">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">Explore some of my latest projects</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="print">Print</button>
+                <button class="filter-btn" data-filter="photo">Photo</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-card branding" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=600&fit=crop" alt="Logo Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Brand Logo Design</h3>
+                                <p>Professional Vector Logo</p>
+                                <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-card branding" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=600&fit=crop" alt="Brand Guidelines">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Brand Guidelines</h3>
+                                <p>Complete Brand Identity</p>
+                                <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-card social" data-category="social">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=600&fit=crop" alt="Social Media">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Social Media Kit</h3>
+                                <p>Instagram Content Design</p>
+                                <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-card social" data-category="social">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=600&fit=crop" alt="YouTube Thumbnail">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>YouTube Thumbnail</h3>
+                                <p>High-CTR Design</p>
+                                <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-card print" data-category="print">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=600&fit=crop" alt="Print Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Merchandise Design</h3>
+                                <p>T-Shirt & Apparel</p>
+                                <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-card photo" data-category="photo">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=600&fit=crop" alt="Photo Editing">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Photo Retouching</h3>
+                                <p>Professional Editing</p>
+                                <a href="#" class="view-btn"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
+            <div class="about-wrapper">
                 <div class="about-text">
-                    <p>My name is Bilal Hussain. I am a highly skilled graphic designer with over 5 years of experience in the industry. I am proficient in a variety of software programs, including Adobe Photoshop, Adobe Illustrator, Figma, and Canva. I have a strong understanding of design principles and can create visually appealing and effective designs for a variety of purposes.</p>
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-intro">My name is Bilal Hussain. I am a highly skilled graphic designer with over 7 years of experience in the industry.</p>
+                    <p class="about-content">I am proficient in a variety of software programs, including Adobe Photoshop, Adobe Illustrator, Figma, and Canva. I have a strong understanding of design principles and can create visually appealing and effective designs for a variety of purposes.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">7+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">80+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="skills">
-                    <h3>Tools & Skills</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Adobe Photoshop</span>
-                        <span class="skill-tag">Adobe Illustrator</span>
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Canva</span>
-                        <span class="skill-tag">Design Principles</span>
-                        <span class="skill-tag">Branding</span>
-                        <span class="skill-tag">UI/UX Design</span>
-                        <span class="skill-tag">Photo Editing</span>
+                <div class="about-skills">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-pen"></i>
+                            </div>
+                            <h4>Photoshop</h4>
+                            <p>Expert</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-pen-fancy"></i>
+                            </div>
+                            <h4>Illustrator</h4>
+                            <p>Expert</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-pen-ruler"></i>
+                            </div>
+                            <h4>Figma</h4>
+                            <p>Advanced</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h4>Canva</h4>
+                            <p>Advanced</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,16 +212,20 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">My Services</h2>
+            <div class="section-header">
+                <h2 class="section-title">My Services</h2>
+                <p class="section-subtitle">What I offer to bring your vision to life</p>
+            </div>
+            
             <div class="services-grid">
                 <!-- Service 1 -->
                 <div class="service-card">
-                    <div class="service-icon">
+                    <div class="service-icon-box">
                         <i class="fas fa-trademark"></i>
                     </div>
                     <h3>Brand Identity & Logo Design</h3>
-                    <p>Professional vector logos, icon marks, and comprehensive brand guidelines. I create memorable brand identities using Adobe Illustrator and present them through realistic 3D mockups.</p>
-                    <ul class="service-details">
+                    <p>Professional vector logos, icon marks, and comprehensive brand guidelines. I create memorable brand identities using Adobe Illustrator and present them through realistic 3D mockups on building signs, stationery, and apparel.</p>
+                    <ul class="service-features">
                         <li>Vector Logo Design</li>
                         <li>Brand Guidelines</li>
                         <li>3D Mockups</li>
@@ -88,12 +235,12 @@
 
                 <!-- Service 2 -->
                 <div class="service-card">
-                    <div class="service-icon">
+                    <div class="service-icon-box">
                         <i class="fas fa-images"></i>
                     </div>
                     <h3>Social Media Kit & Content Creation</h3>
-                    <p>Engaging social media designs including custom templates, geometric elements, and high-engagement posts. Perfect for Instagram, Facebook, and other platforms.</p>
-                    <ul class="service-details">
+                    <p>Custom vector templates and geometric elements with high-engagement Instagram and Facebook posts. I create carousel designs and ad banners with professional color grading and text placement.</p>
+                    <ul class="service-features">
                         <li>Instagram Posts & Stories</li>
                         <li>Facebook Banners</li>
                         <li>Carousel Designs</li>
@@ -103,12 +250,12 @@
 
                 <!-- Service 3 -->
                 <div class="service-card">
-                    <div class="service-icon">
+                    <div class="service-icon-box">
                         <i class="fas fa-play-circle"></i>
                     </div>
                     <h3>YouTube Thumbnails & Digital Marketing</h3>
-                    <p>High-CTR YouTube thumbnails and digital marketing assets designed to grab attention. Using advanced Photoshop techniques for maximum engagement.</p>
-                    <ul class="service-details">
+                    <p>High-CTR YouTube thumbnails and digital ad banners using advanced Photoshop masking, cutout, and lighting adjustment skills for online creators and businesses.</p>
+                    <ul class="service-features">
                         <li>YouTube Thumbnails</li>
                         <li>Digital Ad Banners</li>
                         <li>Email Headers</li>
@@ -118,12 +265,12 @@
 
                 <!-- Service 4 -->
                 <div class="service-card">
-                    <div class="service-icon">
+                    <div class="service-icon-box">
                         <i class="fas fa-tshirt"></i>
                     </div>
                     <h3>Print & Merchandise Design</h3>
-                    <p>Print-ready designs for t-shirts, hoodies, packaging, labels, business cards, and flyers. All designs are scalable and ready for production.</p>
-                    <ul class="service-details">
+                    <p>Print-ready designs for t-shirts, hoodies, product packaging, labels, business cards, and flyers. All designs are scalable vector layouts with typography-focused designs.</p>
+                    <ul class="service-features">
                         <li>T-Shirt Designs</li>
                         <li>Product Packaging</li>
                         <li>Business Cards</li>
@@ -133,12 +280,12 @@
 
                 <!-- Service 5 -->
                 <div class="service-card">
-                    <div class="service-icon">
+                    <div class="service-icon-box">
                         <i class="fas fa-image"></i>
                     </div>
                     <h3>Photo Manipulation & Retouching</h3>
-                    <p>Professional photo editing including background removal, skin retouching, color correction, and cinematic photo composites for e-commerce and marketing.</p>
-                    <ul class="service-details">
+                    <p>Professional photo editing including background removal, skin retouching, color correction, and cinematic photo composites for e-commerce products and Daraz sellers.</p>
+                    <ul class="service-features">
                         <li>Background Removal</li>
                         <li>Skin Retouching</li>
                         <li>Color Correction</li>
@@ -148,12 +295,12 @@
 
                 <!-- Service 6 -->
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-palette"></i>
+                    <div class="service-icon-box">
+                        <i class="fas fa-sparkles"></i>
                     </div>
                     <h3>Custom Design Solutions</h3>
-                    <p>Tailored design solutions for your unique needs. Whether it's a special project or a combination of services, I'm here to bring your vision to life.</p>
-                    <ul class="service-details">
+                    <p>Tailored design solutions for your unique needs. Whether it's a special project or a combination of services, I'm here to bring your vision to life with fast turnaround.</p>
+                    <ul class="service-features">
                         <li>Custom Projects</li>
                         <li>Consultation</li>
                         <li>Revisions</li>
@@ -164,72 +311,57 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+    <!-- Testimonials Section -->
+    <section class="testimonials">
         <div class="container">
-            <h2 class="section-title">My Portfolio</h2>
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="branding">Branding</button>
-                <button class="filter-btn" data-filter="social">Social Media</button>
-                <button class="filter-btn" data-filter="print">Print</button>
-                <button class="filter-btn" data-filter="photo">Photo Editing</button>
+            <div class="section-header">
+                <h2 class="section-title">What Clients Say</h2>
+                <p class="section-subtitle">Hear from happy clients</p>
             </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item branding" data-category="branding">
-                    <img src="https://via.placeholder.com/400x300?text=Logo+Design" alt="Logo Design">
-                    <div class="portfolio-info">
-                        <h3>Logo Design</h3>
-                        <p>Professional Brand Logo</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Bilal delivered exceptional design work. He understood our brand vision perfectly and created stunning visuals that exceeded our expectations."</p>
+                    <div class="testimonial-author">
+                        <h4>Ahmed Khan</h4>
+                        <p>Business Owner</p>
                     </div>
                 </div>
-                <div class="portfolio-item branding" data-category="branding">
-                    <img src="https://via.placeholder.com/400x300?text=Brand+Identity" alt="Brand Identity">
-                    <div class="portfolio-info">
-                        <h3>Brand Identity</h3>
-                        <p>Complete Brand Guidelines</p>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional, creative, and responsive. Bilal is exactly what we were looking for. Highly recommended for any design project."</p>
+                    <div class="testimonial-author">
+                        <h4>Fatima Ali</h4>
+                        <p>Marketing Manager</p>
                     </div>
                 </div>
-                <div class="portfolio-item social" data-category="social">
-                    <img src="https://via.placeholder.com/400x300?text=Social+Media" alt="Social Media">
-                    <div class="portfolio-info">
-                        <h3>Social Media Kit</h3>
-                        <p>Instagram Post Design</p>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                </div>
-                <div class="portfolio-item social" data-category="social">
-                    <img src="https://via.placeholder.com/400x300?text=YouTube+Thumbnail" alt="YouTube">
-                    <div class="portfolio-info">
-                        <h3>YouTube Thumbnail</h3>
-                        <p>High-CTR Thumbnail</p>
-                    </div>
-                </div>
-                <div class="portfolio-item print" data-category="print">
-                    <img src="https://via.placeholder.com/400x300?text=T-Shirt+Design" alt="T-Shirt">
-                    <div class="portfolio-info">
-                        <h3>Merchandise Design</h3>
-                        <p>T-Shirt & Apparel</p>
-                    </div>
-                </div>
-                <div class="portfolio-item print" data-category="print">
-                    <img src="https://via.placeholder.com/400x300?text=Business+Cards" alt="Business Cards">
-                    <div class="portfolio-info">
-                        <h3>Business Cards</h3>
-                        <p>Print Design</p>
-                    </div>
-                </div>
-                <div class="portfolio-item photo" data-category="photo">
-                    <img src="https://via.placeholder.com/400x300?text=Photo+Editing" alt="Photo Editing">
-                    <div class="portfolio-info">
-                        <h3>Photo Retouching</h3>
-                        <p>Professional Photo Editing</p>
-                    </div>
-                </div>
-                <div class="portfolio-item photo" data-category="photo">
-                    <img src="https://via.placeholder.com/400x300?text=Product+Photo" alt="Product Photo">
-                    <div class="portfolio-info">
-                        <h3>E-Commerce Photo</h3>
-                        <p>Product Photography</p>
+                    <p class="testimonial-text">"Great design skills and excellent communication. Bilal made the entire process smooth and delivered results on time and on budget."</p>
+                    <div class="testimonial-author">
+                        <h4>Hassan Ali</h4>
+                        <p>Startup Founder</p>
                     </div>
                 </div>
             </div>
@@ -239,55 +371,63 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">Ready to start your next project? Let's work together!</p>
-            <div class="contact-content">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Have a project in mind? Get in touch with me</p>
+            </div>
+            
+            <div class="contact-wrapper">
                 <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="text" placeholder="Subject" required>
                     </div>
                     <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <textarea placeholder="Tell me about your project..." rows="6" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
+
                 <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+92 (Your Phone Number)</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
                             <p>bilal@example.com</p>
                         </div>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+92 (XXX) XXX-XXXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
                         <div>
                             <h4>Location</h4>
                             <p>Pakistan</p>
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -297,7 +437,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Bilal Hussain. All rights reserved. | Professional Graphic Designer</p>
+            <p>&copy; 2024 Bilal Hussain. All rights reserved. | Graphic Designer</p>
         </div>
     </footer>
 
